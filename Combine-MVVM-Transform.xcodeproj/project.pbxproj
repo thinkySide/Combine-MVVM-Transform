@@ -9,25 +9,45 @@
 /* Begin PBXBuildFile section */
 		82F99E532BEF9245001FAB1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F99E522BEF9245001FAB1C /* AppDelegate.swift */; };
 		82F99E552BEF9245001FAB1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F99E542BEF9245001FAB1C /* SceneDelegate.swift */; };
-		82F99E572BEF9245001FAB1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F99E562BEF9245001FAB1C /* ViewController.swift */; };
+		82F99E572BEF9245001FAB1C /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F99E562BEF9245001FAB1C /* QuoteViewController.swift */; };
 		82F99E5A2BEF9245001FAB1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F99E582BEF9245001FAB1C /* Main.storyboard */; };
 		82F99E5C2BEF9246001FAB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F99E5B2BEF9246001FAB1C /* Assets.xcassets */; };
 		82F99E5F2BEF9246001FAB1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F99E5D2BEF9246001FAB1C /* LaunchScreen.storyboard */; };
+		82F99E6D2BEFA5F9001FAB1C /* Combine_MVVM_TransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F99E6C2BEFA5F9001FAB1C /* Combine_MVVM_TransformTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82F99E6E2BEFA5F9001FAB1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F99E472BEF9245001FAB1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82F99E4E2BEF9245001FAB1C;
+			remoteInfo = "Combine-MVVM-Transform";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		82F99E4F2BEF9245001FAB1C /* Combine-MVVM-Transform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Combine-MVVM-Transform.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F99E522BEF9245001FAB1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82F99E542BEF9245001FAB1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82F99E562BEF9245001FAB1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82F99E562BEF9245001FAB1C /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		82F99E592BEF9245001FAB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82F99E5B2BEF9246001FAB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82F99E5E2BEF9246001FAB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82F99E602BEF9246001FAB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F99E6A2BEFA5F9001FAB1C /* Combine-MVVM-TransformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine-MVVM-TransformTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F99E6C2BEFA5F9001FAB1C /* Combine_MVVM_TransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_MVVM_TransformTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		82F99E4C2BEF9245001FAB1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F99E672BEFA5F8001FAB1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				82F99E512BEF9245001FAB1C /* Combine-MVVM-Transform */,
+				82F99E6B2BEFA5F9001FAB1C /* Combine-MVVM-TransformTests */,
 				82F99E502BEF9245001FAB1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				82F99E4F2BEF9245001FAB1C /* Combine-MVVM-Transform.app */,
+				82F99E6A2BEFA5F9001FAB1C /* Combine-MVVM-TransformTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +78,23 @@
 		82F99E512BEF9245001FAB1C /* Combine-MVVM-Transform */ = {
 			isa = PBXGroup;
 			children = (
+				82F99E602BEF9246001FAB1C /* Info.plist */,
+				82F99E5B2BEF9246001FAB1C /* Assets.xcassets */,
+				82F99E582BEF9245001FAB1C /* Main.storyboard */,
+				82F99E5D2BEF9246001FAB1C /* LaunchScreen.storyboard */,
 				82F99E522BEF9245001FAB1C /* AppDelegate.swift */,
 				82F99E542BEF9245001FAB1C /* SceneDelegate.swift */,
-				82F99E562BEF9245001FAB1C /* ViewController.swift */,
-				82F99E582BEF9245001FAB1C /* Main.storyboard */,
-				82F99E5B2BEF9246001FAB1C /* Assets.xcassets */,
-				82F99E5D2BEF9246001FAB1C /* LaunchScreen.storyboard */,
-				82F99E602BEF9246001FAB1C /* Info.plist */,
+				82F99E562BEF9245001FAB1C /* QuoteViewController.swift */,
 			);
 			path = "Combine-MVVM-Transform";
+			sourceTree = "<group>";
+		};
+		82F99E6B2BEFA5F9001FAB1C /* Combine-MVVM-TransformTests */ = {
+			isa = PBXGroup;
+			children = (
+				82F99E6C2BEFA5F9001FAB1C /* Combine_MVVM_TransformTests.swift */,
+			);
+			path = "Combine-MVVM-TransformTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,24 @@
 			productReference = 82F99E4F2BEF9245001FAB1C /* Combine-MVVM-Transform.app */;
 			productType = "com.apple.product-type.application";
 		};
+		82F99E692BEFA5F8001FAB1C /* Combine-MVVM-TransformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F99E702BEFA5F9001FAB1C /* Build configuration list for PBXNativeTarget "Combine-MVVM-TransformTests" */;
+			buildPhases = (
+				82F99E662BEFA5F8001FAB1C /* Sources */,
+				82F99E672BEFA5F8001FAB1C /* Frameworks */,
+				82F99E682BEFA5F8001FAB1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82F99E6F2BEFA5F9001FAB1C /* PBXTargetDependency */,
+			);
+			name = "Combine-MVVM-TransformTests";
+			productName = "Combine-MVVM-TransformTests";
+			productReference = 82F99E6A2BEFA5F9001FAB1C /* Combine-MVVM-TransformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					82F99E4E2BEF9245001FAB1C = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					82F99E692BEFA5F8001FAB1C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 82F99E4E2BEF9245001FAB1C;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				82F99E4E2BEF9245001FAB1C /* Combine-MVVM-Transform */,
+				82F99E692BEFA5F8001FAB1C /* Combine-MVVM-TransformTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +184,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82F99E682BEFA5F8001FAB1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +198,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82F99E572BEF9245001FAB1C /* ViewController.swift in Sources */,
+				82F99E572BEF9245001FAB1C /* QuoteViewController.swift in Sources */,
 				82F99E532BEF9245001FAB1C /* AppDelegate.swift in Sources */,
 				82F99E552BEF9245001FAB1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82F99E662BEFA5F8001FAB1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F99E6D2BEFA5F9001FAB1C /* Combine_MVVM_TransformTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82F99E6F2BEFA5F9001FAB1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82F99E4E2BEF9245001FAB1C /* Combine-MVVM-Transform */;
+			targetProxy = 82F99E6E2BEFA5F9001FAB1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		82F99E582BEF9245001FAB1C /* Main.storyboard */ = {
@@ -341,6 +417,42 @@
 			};
 			name = Release;
 		};
+		82F99E712BEFA5F9001FAB1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9XG4S4XZWN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkyside.Combine-MVVM-TransformTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Combine-MVVM-Transform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Combine-MVVM-Transform";
+			};
+			name = Debug;
+		};
+		82F99E722BEFA5F9001FAB1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9XG4S4XZWN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkyside.Combine-MVVM-TransformTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Combine-MVVM-Transform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Combine-MVVM-Transform";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -358,6 +470,15 @@
 			buildConfigurations = (
 				82F99E642BEF9246001FAB1C /* Debug */,
 				82F99E652BEF9246001FAB1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82F99E702BEFA5F9001FAB1C /* Build configuration list for PBXNativeTarget "Combine-MVVM-TransformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F99E712BEFA5F9001FAB1C /* Debug */,
+				82F99E722BEFA5F9001FAB1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
